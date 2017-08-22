@@ -1,0 +1,278 @@
+@media (min-width: 769px) {
+  .centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto; } }
+@media (min-width: 1100px) {
+  .centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto; } }
+
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+p {
+  margin: 0 0 1.6666666667em;
+  font-weight: 300;
+  font-size: 1.25em;
+  line-height: 1.5; }
+
+a {
+  color: #47DEFF;
+  text-decoration: none; }
+  a:hover {
+    color: #50E3C2; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  max-width: 1400px; }
+  .container .grid__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25em; }
+    @media (min-width: 769px) {
+      .container .grid__row {
+        flex-direction: row;
+        justify-content: space-between; } }
+
+[class^='grid__col--'] {
+  margin-top: 0.3125em;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  @media (min-width: 769px) {
+    [class^='grid__col--'] {
+      padding: 0.5em 0 0.5em 0; } }
+  @media (min-width: 1px) and (max-width: 768px) {
+    [class^='grid__col--'] {
+      padding: 0.5em 0 0.5em 0;
+      align-self: stretch; } }
+
+.grid__row--12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25em; }
+  @media (min-width: 1100px) {
+    .grid__row--12 {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+@media (min-width: 1100px) {
+  .grid__row--12 .grid__col--12 {
+    flex-direction: row; } }
+@media (min-width: 769px) {
+  .grid__row--12 .grid__col--12 {
+    flex-direction: row; } }
+@media (min-width: 1px) and (max-width: 768px) {
+  .grid__row--12 .grid__col--12 {
+    flex-wrap: wrap; } }
+
+@media (min-width: 769px) {
+  .grid__col--1 {
+    width: 6.3318777293%; }
+
+  .grid__col--2 {
+    width: 14.8471615721%; }
+
+  .grid__col--3 {
+    width: 23.3624454148%; }
+
+  .grid__col--4 {
+    width: 31.8777292576%; }
+
+  .grid__col--5 {
+    width: 40.3930131004%; }
+
+  .grid__col--6 {
+    width: 48.9082969432%; }
+
+  .grid__col--7 {
+    width: 57.423580786%; }
+
+  .grid__col--8 {
+    width: 65.9388646288%; }
+
+  .grid__col--9 {
+    width: 74.4541484716%; }
+
+  .grid__col--10 {
+    width: 82.9694323144%; }
+
+  .grid__col--11 {
+    width: 91.4847161572%; }
+
+  .grid__col--12 {
+    width: 100%; } }
+.nav__item {
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.nav__item a {
+  text-decoration: none;
+  color: #797e83;
+  padding: 7px 20px;
+  margin: 30px; }
+
+.nav__item a:hover {
+  border-bottom: 2px solid #50E3C2;
+  color: #0b0b0b; }
+
+a[href^="#type"] {
+  background: #50E3C2;
+  color: #fff;
+  border-radius: 2px; }
+  a[href^="#type"]:hover {
+    border-bottom: 2px solid #0b0b0b;
+    color: #fff; }
+
+.headline--primary {
+  color: #50E3C2;
+  font-size: 2.375em;
+  font-size: 700;
+  line-height: 1.0952380952;
+  margin-top: 0; }
+
+.headline--secondary {
+  color: #797e83;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.5em; }
+
+.blockquote {
+  color: #0b0b0b;
+  font-weight: 300;
+  font-size: 1.125em;
+  font-style: italic;
+  font-weight: 700;
+  padding-left: 10px; }
+
+[class^="btn--"] {
+  padding: 10px 30px;
+  border: 0;
+  margin: 0.625em;
+  min-width: 125px;
+  border-radius: 0.4em;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  transition: opacity 0.5s;
+  cursor: pointer; }
+  [class^="btn--"]:first-letter {
+    text-transform: uppercase; }
+  [class^="btn--"]:hover {
+    opacity: .75; }
+  [class^="btn--"]:active {
+    opacity: initial; }
+
+[class^='grid__col--'] {
+  font-weight: 700;
+  color: #fff; }
+
+.img {
+  display: inline-block; }
+  .img--avatar {
+    align-self: center; }
+    @media (min-width: 1px) and (max-width: 768px) {
+      .img--avatar {
+        margin-top: 20px; } }
+
+@media (min-width: 769px) {
+  .grid__col--12 .card {
+    padding-right: 33%; } }
+
+.card p {
+  color: #0b0b0b; }
+
+.headline--primary {
+  margin-bottom: 1.6666666667em; }
+.headline--secondary {
+  margin-bottom: 0.9166666667em; }
+
+.blockquote {
+  border-left: 10px solid #50E3C2; }
+  @media (min-width: 769px) {
+    .blockquote {
+      padding-right: 33%; } }
+
+.form {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .form {
+      width: 100%; } }
+  .form__input {
+    border: none;
+    border-bottom: 7px solid #50E3C2;
+    border-radius: 3px;
+    padding: 20px;
+    width: 100%;
+    outline: 0;
+    font-size: 1.0625em; }
+    @media (min-width: 769px) {
+      .form__input {
+        margin-top: 1.25em; } }
+  .form__label--hidden {
+    display: none; }
+
+.form .btn--default {
+  align-self: center;
+  margin-top: 15px; }
+
+.theme__colors.btn--default {
+  background-color: #47DEFF; }
+.theme__colors.btn--success {
+  background-color: #78C58F; }
+.theme__colors.btn--error {
+  background-color: #FF8F93; }
+.theme__colors.btn--warning {
+  background-color: #FF9C7E; }
+.theme__colors.btn--info {
+  background-color: #BD9CFF; }
+.theme__colors.grid__col--3 {
+  background-color: #CE86E9; }
+.theme__colors.grid__col--4 {
+  background-color: #E0B47C; }
+.theme__colors.grid__col--5 {
+  background-color: #9DE997; }
+.theme__colors.grid__col--6 {
+  background-color: #838EDC; }
+.theme__colors.grid__col--7 {
+  background-color: #D9856D; }
+.theme__colors.grid__col--8 {
+  background-color: #78C0AB; }
+.theme__colors.grid__col--12 {
+  background-color: #7FD079; }
+
+@media (min-width: 1px) and (max-width: 768px) {
+  [class^="btn--"] {
+    width: 100%; } }
+
+/* --------------------------
+  Navigation
+--------------------------- */
+.nav {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  display: flex; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    .nav {
+      flex-direction: column; } }
+
+@media (min-width: 769px) {
+  .nav__item a {
+    margin: 0;
+    font-size: 1.25em; } }
+
+/*# sourceMappingURL=styles.css.map */

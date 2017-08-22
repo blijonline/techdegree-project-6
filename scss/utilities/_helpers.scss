@@ -1,0 +1,22 @@
+// ==========================================================================
+// Helpers
+// ==========================================================================
+
+// Center alignment
+
+%center-align {
+	text-align: center;
+}
+
+.centered {
+
+	@include mq(medium) {
+	float: none;
+	margin-left: auto;
+	margin-right: auto; }
+
+	@include mq(large) {
+	float: none;
+	margin-left: auto;
+	margin-right: auto; }
+}

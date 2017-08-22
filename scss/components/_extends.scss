@@ -1,0 +1,92 @@
+// ==========================================================================
+// Placeholders
+// ==========================================================================
+
+//Nav Items
+%item {
+  padding-top:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+%nav-a {
+    text-decoration: none;
+    color: $grey;
+    padding:7px 20px;
+    margin:30px;
+}
+
+%nav-hover {
+    border-bottom: 2px solid $turquoise;
+    color: $black; 
+}
+
+%nav-first-item {
+    background: $turquoise;
+    color: $white;
+    border-radius: 2px;
+  &:hover{
+    border-bottom: 2px solid $black;
+    color: $white;
+  }
+}
+
+
+// Headlines
+
+%hdln-prim {
+  color: $turquoise;
+  font-size: em(38px);
+  font-size: $font-weight--bold;
+  line-height: (46px/42px);
+  margin-top: 0;
+}
+%hdln-sec {
+  color: $grey;
+  letter-spacing: $letter-space;
+  font-weight: $font-weight--light;
+  font-size: em(24px);
+}
+
+// Blockquotes
+
+%block-text {
+  color: $black;
+  font-weight: $font-weight--light;
+  font-size: em(18px);
+  font-style: italic;
+  font-weight: $font-weight--bold;
+  padding-left: 10px;
+}
+
+// Buttons
+
+%btn {
+  padding: 10px 30px;
+  border: 0;
+  margin: em(10px);
+  min-width: 125px;
+  border-radius : $br--default;
+  color: $white;
+  font-size : em(16px);
+  font-weight: $font-weight--bold;
+  transition: opacity $trns-duration;
+  cursor: pointer;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+  
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
+
+// Columns text layout
+
+%coltext {
+font-weight: $font-weight--bold;
+color: $white; 
+}

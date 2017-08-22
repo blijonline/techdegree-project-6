@@ -1,0 +1,100 @@
+// ==========================================================================
+// Mixins
+// ==========================================================================
+
+// BEM selectors
+
+@mixin el($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+@mixin mod($modifier) {
+	&--#{$modifier} {
+	@content
+	}
+}
+
+//=========
+// Flexbox 
+//=========
+
+@mixin flexbox {
+     display: flex;
+}
+
+@mixin flexwrap {
+  flex-wrap: wrap;
+} 
+
+@mixin flex-direction($val) {
+  flex-direction: $val;
+}
+
+@mixin justify-content($val) {
+  justify-content: $val;
+}
+@mixin align-items($val) {
+  align-items: $val;
+}
+  
+@mixin align-self($val) {
+  align-self: $val;
+}
+
+@mixin order($val) {
+  order: $val;
+}
+
+@mixin flex($values) {
+  flex: $values;
+}
+
+@mixin flex-grow($val) {
+  flex-grow: $val;
+}  
+
+@mixin flex-basis($val) {
+  flex-basis: $val;
+}  
+  
+// Media queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint--sm) and (max-width: $brkpoint--md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint--md + 1) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $brkpoint--lg) {
+      @content;
+    }
+  }
+  @else {
+    @error "No value could be retrieved for `#{$break}`. "
+  }
+}
+
+// Generate modifier color classes
+
+@mixin btn-colors($map) {
+	@each $theme, $color in $map {
+		&.btn--#{$theme} {
+			background-color: $color;    
+		}
+	}
+}
+
+@mixin grid-colors($map) {
+	@each $theme, $color in $map {
+		&.grid__#{$theme} {
+			background-color: $color;    
+		}
+	}
+}

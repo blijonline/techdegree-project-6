@@ -1,0 +1,83 @@
+//Container 
+
+.container {
+	@include flexbox;
+	@include flex-direction(column);
+	width:90%;
+	margin:auto;
+    max-width: 1400px;
+  	.grid {
+	@include el(row) {
+		@include flexbox;
+		@include flex-direction(column);
+		@include align-items(center);
+		padding: em(20px);
+		@include mq(medium) {
+			@include flex-direction(row);
+			@include justify-content(space-between);
+		}
+
+	}
+
+  }
+}
+
+
+
+[class^='grid__col--'] {
+	margin-top:em(5px);
+  @extend %coltext;
+	@include flexbox;
+	@include align-items(center);
+	@include flex-direction(column);
+
+	@include mq(medium) {
+	padding: em(8px) 0 em(8px) 0;
+	}
+	@include mq(small) {
+	padding: em(8px) 0 em(8px) 0;
+	@include align-self(stretch);
+	}
+
+}
+
+
+.grid__row--12 {
+  @include flexbox;
+  @include flex-direction(column);
+  @include align-items(center);
+  padding: em(20px);
+  @include mq(large) {
+    @include flex-direction(row);
+    @include justify-content(space-between);
+  }
+}
+
+
+
+.grid__row--12 .grid__col--12 {
+  @include mq(large) {
+    @include flex-direction(row);
+  }
+  @include mq(medium) {
+    @include flex-direction(row);
+  }
+  @include mq(small) {
+  	@include flexwrap;
+  }
+ }
+
+
+@include mq(medium) {
+@for $i from 1 through $g-col-count {
+  
+  $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+  $target: ($g-col-width *$i) + ($g-gutter-width * ($i - 1));
+  
+  // Generate column modifier classes
+  
+  .grid__col--#{$i} {
+    width: percentage($target / $context);
+  }
+}
+}

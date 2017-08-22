@@ -1,0 +1,97 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-family--primary : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--light      : 300;
+$font-weight--regular    : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 800;
+
+// Descriptive Base Colors
+
+$white                 : #fff;
+$black                : #0b0b0b;
+$grey                 : #797e83;
+$turquoise            : #50E3C2;
+
+// Functional Colors
+
+$malibu               : #47DEFF;
+$de-york              : #78C58F;
+$pink-salmon          : #FF8F93;
+$vivid-tangerine      : #FF9C7E;
+$mauve                : #BD9CFF;
+
+// Collumn Colors
+
+$mantis               : #7FD079;
+$chetwode-blue        : #838EDC;
+$harvest-gold         : #E0B47C;
+$lavender             : #CE86E9;
+$granny-smith-apple   : #9DE997;
+$copperfield          : #D9856D;
+$neptune              : #78C0AB;
+
+
+
+// Color Usage
+
+$color-primary   : $turquoise;
+
+// UI Colors
+
+$btn-colors: (
+	default  : $malibu,
+	success  : $de-york,
+	error    : $pink-salmon,
+	warning  : $vivid-tangerine,
+	info     : $mauve
+);
+
+$grid-colors: (
+    col--3   : $lavender,
+    col--4   : $harvest-gold,
+    col--5   : $granny-smith-apple,
+    col--6   : $chetwode-blue,
+    col--7   : $copperfield,
+    col--8   : $neptune,
+    col--12  : $mantis
+);
+
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Border radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .5s;
+
+// Path to Assets
+
+$path--rel      : "../img";
+
+// Grid
+
+$g-col-width    : 87px;
+$g-gutter-width : 30px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1137px;
+
+// Breakpoints
+
+$brkpoint--sm    : 1px;
+$brkpoint--md    : 768px;
+$brkpoint--lg    : 1100px;
