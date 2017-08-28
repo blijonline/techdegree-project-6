@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('images/background.png') #edeff0;
+  background: url('svgs/background.svg') #edeff0;
 }
 
 #container {
@@ -79,4 +79,185 @@ footer {
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+/* Menu Icons */
+
+.nav-icon .st0 {
+  fill: #39ADD1;
+
+} 
+
+.nav-icon .st0 {
+  fill: #39ADD1;
+}
+
+.nav-icon .st0 {
+  fill: #39ADD1;
+}
+
+/* Menu hover icon styles */
+
+
+a,
+.nav-icon .st0 {
+  transition: transform 0.6s ease-out;
+}
+
+a:hover .nav-icon .st0 {
+  fill: #111;
+  transform: scale(1.1);
+}
+
+.nav-icon {
+  height: 20px;
+  width: 20px;
+  padding: 0px 3px 3px 0px;
+}
+
+
+/* Logo styles */
+
+.logo {
+  width: 140px; 
+  height: 120px;
+}
+
+.logo .st0 {
+  fill: #BA8058;
+}
+
+.logo .st1 {
+  fill: #EAAA7F;
+}
+
+.logo .st2 {
+  fill: #F4C6A6;
+}
+
+.logotitle {
+  color: #EAAA7F;
+}
+
+
+/* Dog Images */
+
+.corgi-red,
+.corgi-fawn,
+.corgi-sable,
+.corgi-blacktan {
+  width: 170px;
+  height: 170px;
+}
+
+/**** Dog Images Colors ****/
+
+/* Corgi Red */
+
+.corgi-red .st0 {
+  fill: #9D9595;
+}
+
+.corgi-red .st1 {
+  fill:#FBFEFF;
+}
+
+.corgi-red .st2 {
+  fill:#2D3339;
+}
+
+.corgi-red .st3 {
+  fill:#FFF;
+}
+
+/* Corgi Fawn */
+
+.corgi-fawn .left-ear {
+  fill: #9D9595;
+}
+
+.corgi-fawn .right-ear {
+   fill: #9D9595;
+}
+
+.corgi-fawn .st0 {
+  fill:#EAAA7F;
+}
+
+.corgi-fawn .st1 {
+  fill:#FBFEFF;
+}
+
+.corgi-fawn .st2 {
+  fill:#2D3339;
+}
+
+.corgi-fawn .st3 {
+  fill:#F4C6A6;
+}
+
+/* Corgi Sable */
+
+.corgi-sable .left-ear {
+  fill: #000;
+}
+
+.corgi-sable .right-ear {
+  fill: #52595F;
+}
+
+.corgi-sable .st0 {
+  fill:#844B24;
+}
+
+.corgi-sable .st1 {
+  fill:#FBFEFF;
+}
+
+.corgi-sable .st2 {
+  fill:#2D3339;
+}
+
+.corgi-sable .st3 {
+  fill:#BA8058;
+}
+
+/* Corgi Black and Tan */
+
+.corgi-blacktan .left-ear {
+  fill: #000;
+}
+
+.corgi-blacktan .right-ear {
+  fill: #000;
+}
+
+.corgi-blacktan .st0 {
+  fill:#BA8058;
+}
+
+.corgi-blacktan .st1 {
+  fill:#52595F;
+}
+
+.corgi-blacktan .st2 {
+  fill:#FBFEFF;
+}
+
+.corgi-blacktan .st3 {
+  fill:#2D3339;
+}
+
+/* Media Queries */
+
+@media (max-width: 425px) {
+    .logotext {
+      display: none;
+    }
+}
+
+@media (min-width: 426px) {
+    .logotitle {
+      display: none;
+    }
 }
